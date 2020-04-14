@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="392.0" prefWidth="513.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.inicio_controller">
+   <children>
+      <JFXButton fx:id="btninventario" layoutX="120.0" layoutY="93.0" onAction="#irinvenario" text="Invenario" />
+      <JFXButton fx:id="btnpcobrar" layoutX="321.0" layoutY="93.0" onAction="#irpcobrar" text="cuentas por cobrar" />
+      <JFXButton fx:id="btnproveedores" layoutX="120.0" layoutY="238.0" onAction="#irproveedores" text="proveedores" />
+      <JFXButton fx:id="btnventas" layoutX="331.0" layoutY="238.0" onAction="#irventas" text="ventas" />
+      <Label layoutX="183.0" layoutY="43.0" text="aqui puedes ver tus cuentas" />
+   </children>
+</AnchorPane>

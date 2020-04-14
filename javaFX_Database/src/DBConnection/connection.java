@@ -1,0 +1,17 @@
+package DBConnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class connection {
+	public void getConnection() throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		Connection con;
+		
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3307/employee","root","eduardo");
+		System.out.println("connected to database");
+	}
+}
